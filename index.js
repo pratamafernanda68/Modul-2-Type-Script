@@ -1,19 +1,26 @@
 var nama = "Budi";
 var umur = 17;
 var aktif = true;
+
 console.log(nama, umur, aktif);
+
 function login(username, password) {
     return username === "admin" && password === "admin";
 }
-console.log(login("admin", "admin"));
-var user = {
+
+const siswa1 = {
     id: 1,
-    nama: "Sinta",
-    role: "admin"
+    nama: "Budi Santoso",
+    kelas: "XII RPL 1",
 };
-console.log(user);
-var buku1 = {
-    id: 1,
-    judul: "Belajar Backend"
-};
-console.log(buku1);
+
+console.log(siswa1);
+
+// Tugas 2
+function hitungUmur(tahunLahir) {
+    const tahunSekarang = new Date().getFullYear();
+    return tahunSekarang - tahunLahir;
+}
+
+const umurSiswa1 = hitungUmur(2005);
+console.log(umurSiswa1);
